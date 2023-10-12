@@ -1,3 +1,4 @@
+## 项目仅为展示，请勿滥用。
 
 ## Playtube_api，特意针对playtube开发的采集youtube程序。
 
@@ -12,6 +13,7 @@
 * playtube主程序搭建好后搭建playtube_api采集程序，
 
 * 进入playtube数据库，手工删除替换playtube原始表项：
+* **注意下列只有tp_api_key为自建新表，剩余的均为程序原表，原表基础上增加了几个字段**
 ~~~
 //一、创建、替换表
 
@@ -33,7 +35,7 @@ CREATE TABLE `tp_api_key` (
   KEY `use_times` (`use_times`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
-
+---------------- 下列为程序原表 ------------------
 
 CREATE TABLE `users` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
